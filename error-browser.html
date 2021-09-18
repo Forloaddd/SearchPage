@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starton - Error</title>
+    <link rel="stylesheet" href="assets/css/scrollbar.css">
+    <link rel="shortcut icon" href="assets/img/iconSt.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <noscript>
+        <META HTTP-EQUIV="REFRESH" CONTENT="0;URL=error-js.html">
+      </noscript>
+</head>
+
+<body>
+    <br>
+    <div class="des">
+        <a href="index.html"><img src="assets/gifs/space-dog.gif" title="Intentar de nuevo" id="gif-vd"
+                alt="opera dog gif" width="450px"></a>
+        <br><br>
+        Esta sitio <b>no esta soportado</b> por Internet Explorer, Por favor
+        use un navegador diferente.
+        <br><br>
+        <i>Navegadores recomendados</i>
+        <br>
+        <div class="as" style="margin-top: 20px;">
+            <a href=""><button class="btn btn-primary"
+                    style="margin-right: 10px; margin-top: 10px;">Starton</button></a>
+            <a href="https://www.google.com/intl/es/chrome/" target="_blank"><button class="btn btn-primary"
+                    style="margin-right: 10px; margin-top: 10px;">Google
+                    Chrome</button></a>
+            <a href="https://www.microsoft.com/es-es/edge" target="_blank"><button class="btn btn-primary"
+                    style="margin-right: 10px; margin-top: 10px;">Microsoft Edge</button></a>
+            <a href="https://www.opera.com/es" target="_blank"><button class="btn btn-primary"
+                    style="margin-right: 10px; margin-top: 10px;">Opera</button></a>
+        </div>
+    </div>
+    <br>
+    <style>
+        * {
+            text-justify: auto;
+            text-align: center;
+            font-size: x-large;
+        }
+    </style>
+    <script>
+        if (/MSIE 10/i.test(navigator.userAgent)) {}
+        else if (/MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {}
+        else {
+            window.location.assign('index.html')
+        }
+    </script>
+</body>
+
+</html>

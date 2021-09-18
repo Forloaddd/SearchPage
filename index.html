@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Starton</title>
+  <!--Nueva Pestaña-->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="shortcut icon" href="assets/img/iconSt.png" type="image/x-icon">
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <noscript>
+    <META HTTP-EQUIV="REFRESH" CONTENT="0;URL=error-js.html">
+  </noscript>
+</head>
+
+<body>
+  <div class="background-overlay"></div>
+  <div class="wp"></div>
+  <div id="engine-google"></div>
+  <div class="greeting-start">
+    <h5 id="time-txt" translate="no"></h5>
+    <h5 id="gt-txt"></h5>
+  </div>
+  <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+    <form>
+      <div class="form-row">
+        <div class="col-12 col-md-9 mb-2 mb-md-0"><input class="form-control form-control-lg search-input" type="search"
+            placeholder="Buscar o escribir dirección web" id="search-input"></div>
+        <div class="col-12 col-md-3"><button class="btn btn-primary btn-block btn-lg" type="button" id="search-btn"><img
+              src="assets/img/search_30px.png" alt="Search" height="25px"></button></div>
+      </div>
+    </form>
+  </div>
+  <div id="dowst">
+  </div>
+  <div class="menuSQ">
+    <img src="assets/img/squared_menu_24px.png" alt="Squared Menu" class="menuPi" title="Aplicaciones" id="apps-menu">
+  </div>
+  <div class="hover-dis-settings"><img src="assets/img/settings_24_px.png" alt="Settings" id="settingsPc"
+      title="Configuración (Esc)" data-toggle="modal" data-target="#settings">
+  </div>
+  <p class="lbl-cor">Por <a href="https://github.com/Forloaddd/" class="link-cor" translate="no">Starton</p></a>
+  <p class="like-wallp" data-toggle="tooltip" data-placement="left" title="Mostrar fondo"><a class="lw-link-draw">¿Te
+      agrada este
+      fondo?</a></p>
+  <!--***************************-->
+  <!--***************************-->
+  <div class="modal fade" id="settings" tabindex="-1" role="dialog" aria-labelledby="sttgs" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Configuración</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="openinNW">
+            <input id="openNWI" type="checkbox" name="checkbox" style="margin-right: 5px;"> Abrir búsquedas en nueva
+            pestaña
+          </div>
+          <input type="checkbox" name="autocomplete" id="autocomplete-inp" style="margin-right: 5px; margin-top: 10px;">
+          Autocompletar búsquedas
+          <div class="separator">
+          </div>
+          <input type="button" class="btn btn-primary" id="change-wallpaper-btn" value="Cambiar fondo"
+            style="margin-top: 40px;">
+        </div>
+        <div class="modal-footer">
+          <a href="" id="clear-settings-btn" data-toggle="tooltip" data-placement="top"
+            title="Reiniciar todos los ajustes a los valores predeterminados">Reiniciar</a>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/interactions.js"></script>
+</body>
+
+</html>
