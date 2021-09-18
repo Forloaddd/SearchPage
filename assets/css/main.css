@@ -1,0 +1,97 @@
+:root {
+  --hover-transp: rgba(212, 212, 212, 0.212);
+  --fonts-color-white: rgb(211, 211, 211);
+  --blue-bootstrap: #007bff;
+  --blue-hover-bootstrap: #0056b3;
+  --cyan-bootstrap: #17a2b8;
+}
+
+.form-row {
+  margin-top: 25%;
+}
+
+#time-txt{
+  font-size: small;
+  color: var(--fonts-color-white);
+  top: 20px;
+  left: 20px;
+  position: absolute;
+  z-index: 5;
+}
+
+.menuSQ {
+  position: absolute;
+  top: 18px;
+  right: 60px;
+}
+
+.menuPi:hover {
+  background-color: var(--hover-transp);
+  border-radius: 5px;
+}
+
+#gt-txt {
+  font-size: small;
+  color: var(--fonts-color-white);
+  top: 40px;
+  left: 20px;
+  position: absolute;
+  z-index: 5;
+}
+
+.like-wallp {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  color: var(--fonts-color-white);
+  font-size: small;
+  cursor: pointer;
+}
+
+.lbl-cor {
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  color: var(--fonts-color-white);
+  font-size: small;
+}
+
+.link-cor,
+.lw-link-draw,
+.link-cor:hover,
+.lw-link-draw:hover {
+  color: var(--fonts-color-white);
+}
+
+#settingsPc {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.dwst{
+  position: absolute;
+  top: 19px;
+  right: 100px;
+}
+
+.dwst:hover{
+  background-color: var(--hover-transp);
+  border-radius: 5px;
+}
+
+#settingsPc:hover {
+  background-color: var(--hover-transp);
+  border-radius: 5px;
+}
+
+.background-overlay {
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  left: 0%;
+  background: black;
+  position: absolute;
+  opacity: .40;
+  z-index: -9;
+}
