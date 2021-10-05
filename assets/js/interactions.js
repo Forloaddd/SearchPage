@@ -10,7 +10,7 @@ $("#clear-settings-btn").click(function () {
 
 // menu - change wallpaper
 $("#change-wallpaper-btn").click(function () {
-    randomWll()
+    randomWll(20)
 })
 
 // guardar favorito
