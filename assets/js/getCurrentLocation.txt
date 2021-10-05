@@ -1,0 +1,4 @@
+$.get("https://ipinfo.io", function(response) {
+    document.getElementById("time-txt").title = response.city + "" +  response.country;
+    console.log(response.city, response.country);
+}, "jsonp")
