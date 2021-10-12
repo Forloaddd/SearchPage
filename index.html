@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>Starton</title>
-  <!--Nueva Pestaña-->
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="shortcut icon" href="assets/img/iconSt.png" type="image/x-icon">
@@ -34,8 +33,7 @@
       </div>
     </form>
   </div>
-  <div id="dowst">
-  </div>
+  <div id="dowst"></div>
   <div class="menuSQ">
     <img src="assets/img/squared_menu_24px.png" alt="Squared Menu" class="menuPi" title="Aplicaciones" id="apps-menu">
   </div>
@@ -43,9 +41,11 @@
       title="Configuración (Esc)" data-toggle="modal" data-target="#settings">
   </div>
   <p class="lbl-cor">Por <a href="https://github.com/Forloaddd/" class="link-cor" translate="no">Starton</p></a>
-  <p class="like-wallp" data-toggle="tooltip" data-placement="left" title="Mostrar fondo"><a class="lw-link-draw">¿Te
-      agrada este
-      fondo?</a></p>
+  <div id="wll-go">
+    <p class="like-wallp" data-toggle="tooltip" data-placement="left" title="Mostrar fondo"><a class="lw-link-draw">¿Te
+        agrada este
+        fondo?</a></p>
+  </div>
   <!--***************************-->
   <!--***************************-->
   <div class="modal fade" id="settings" tabindex="-1" role="dialog" aria-labelledby="sttgs" aria-hidden="true">
@@ -63,7 +63,11 @@
             pestaña
           </div>
           <input type="checkbox" name="autocomplete" id="autocomplete-inp" style="margin-right: 5px; margin-top: 10px;">
-          Autocompletar búsquedas
+          Autocompletar búsquedas <br>
+          <input type="checkbox" name="wallpaper-toogle" id="show-wallpaper"
+            style="margin-right: 5px; margin-top: 10px;" data-toggle="tooltip" data-placement="top"
+            title="Desactivar esto, puede ayudar a un menor uso de ram y a tener un sitio mas rapido">
+          Mostrar fondo
           <div class="separator">
           </div>
           <input type="button" class="btn btn-primary" id="change-wallpaper-btn" value="Cambiar fondo"
