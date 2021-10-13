@@ -13,21 +13,14 @@ $("#change-wallpaper-btn").click(function () {
     randomWll(20)
 })
 
-// guardar favorito
-$("#saveP-btn").click(function () {
-    var ct = document.getElementById("saveP-inp").value
-    localStorage.setItem("favs", ct)
-    location.reload()
-})
-
 // show wallpaper
 $(".lw-link-draw").click(function () {
     window.open("assets/img/wallpapers/" + "w" + wnum + ".jpg", '_blank').focus()
 })
 
-// descargar Starton
+// download starton browser
 $("#dwn-starton").click(function () {
-    
+   // window.open("browser/starton/starton.html", '_blank').focus()
 })
 
 /******************************************/
