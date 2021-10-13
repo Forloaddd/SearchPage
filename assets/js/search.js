@@ -1,7 +1,8 @@
 // find if not got admited characters
 function ComplexCar(a) {
     if (a.indexOf("#") > -1 || a.indexOf("&") > -1) {
-        alert('No use caracteres especiales como "#" o "&".')
+        document.getElementById('alert-code').innerHTML = 'No use caracteres especiales como "#" o "&".'
+        document.getElementById('show-alert').click()
         return false
     } else {
         return true
@@ -16,8 +17,7 @@ function SpecialFinds(o, nw) {
             val = o.substr(4, Infinity)
             if (nw == true) {
                 window.open("https://translate.google.cl/?hl=es&sl=auto&tl=es&text=" + val, '_blank').focus()
-            }
-            else{
+            } else {
                 window.location.assign("https://translate.google.cl/?hl=es&sl=auto&tl=es&text=" + val)
             }
         }
