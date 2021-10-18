@@ -1,6 +1,8 @@
 // focus search input
 document.getElementById('search-input').focus()
 
+// alerts alert-code -------- show-alert ids
+
 // find if not got admited characters
 function ComplexCar(a) {
     if (a.indexOf("#") > -1 || a.indexOf("&") > -1) {
