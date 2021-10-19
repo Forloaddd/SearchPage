@@ -20,7 +20,7 @@ $(".lw-link-draw").click(function () {
 
 // download starton browser
 $("#dwn-starton").click(function () {
-   // window.open("browser/starton/starton.html", '_blank').focus()
+    // window.open("browser/starton/starton.html", '_blank').focus()
 })
 
 /******************************************/
@@ -37,5 +37,7 @@ function shortcuts(e) {
                 secure = true
             }, 1000)
         }
+    } else {
+        FocusIn()
     }
 }

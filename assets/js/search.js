@@ -1,7 +1,9 @@
-// focus search input
-document.getElementById('search-input').focus()
-
 // alerts alert-code -------- show-alert ids
+
+function FocusIn() {
+    // focus search input
+    document.getElementById('search-input').focus()
+}
 
 // find if not got admited characters
 function ComplexCar(a) {
