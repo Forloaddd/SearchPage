@@ -15,7 +15,7 @@ $("#change-wallpaper-btn").click(function () {
 
 // show wallpaper
 $(".lw-link-draw").click(function () {
-    window.open("assets/img/wallpapers/" + "w" + wnum + ".jpg", '_blank').focus()
+    window.open("assets/img/wallpapers/w" + wnum + ".jpg", '_blank').focus()
 })
 
 // download starton browser
@@ -38,6 +38,16 @@ function shortcuts(e) {
             }, 1000)
         }
     } else {
+        dsc()
         FocusIn()
+    }
+}
+
+function dsc(){
+    let vl = document.getElementById("search-input").value.toLowerCase()
+    if (vl.startsWith('t=') || vl.startsWith('w=') || vl.startsWith('y=')) {
+        document.getElementById('search-input').style = 'border-color: #D100FF;'
+    } else {
+        document.getElementById('search-input').style = 'border-color: gray;'
     }
 }

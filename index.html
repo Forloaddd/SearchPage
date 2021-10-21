@@ -27,7 +27,7 @@
     <form>
       <div class="form-row">
         <div class="col-12 col-md-9 mb-2 mb-md-0"><input class="form-control form-control-lg search-input" type="search"
-            placeholder="Buscar o escribir dirección web" id="search-input"></div>
+            placeholder="Buscar o escribir dirección web" id="search-input" onfocusout="dsc()"></div>
         <div class="col-12 col-md-3"><button class="btn btn-primary btn-block btn-lg" type="button" id="search-btn"><img
               src="assets/img/search_30px.png" alt="Search" height="25px"></button></div>
       </div>
@@ -96,7 +96,9 @@
         </div>
         <div class="modal-body">
           <ul>
-            <li><h6 id="alert-code">ERR</h6></li>
+            <li>
+              <h6 id="alert-code">ERR</h6>
+            </li>
           </ul>
         </div>
         <div class="modal-footer">
@@ -104,9 +106,9 @@
         </div>
       </div>
     </div>
-  <script src="assets/js/search.js"></script>
-  <script src="assets/js/app.js"></script>
-  <script src="assets/js/interactions.js"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/interactions.js"></script>
 </body>
 
 </html>

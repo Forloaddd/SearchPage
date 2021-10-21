@@ -19,13 +19,38 @@ function ComplexCar(a) {
 // special finds
 function SpecialFinds(o, nw) {
     let i = o.toLowerCase()
-    if (i.startsWith('trd=')) {
+    // translator
+    if (i.startsWith('t=')) {
         if (ComplexCar(o)) {
-            val = o.substr(4, Infinity)
+            let val = o.substr(2, Infinity)
             if (nw == true) {
                 window.open("https://translate.google.cl/?hl=es&sl=auto&tl=es&text=" + val, '_blank').focus()
             } else {
                 window.location.assign("https://translate.google.cl/?hl=es&sl=auto&tl=es&text=" + val)
+            }
+        }
+        return false
+    }
+    // wikipedia
+    else if (i.startsWith('w=')) {
+        if (ComplexCar(o)) {
+            let val = o.substr(2, Infinity)
+            if (nw == true) {
+                window.open("https://es.wikipedia.org/wiki/" + val, '_blank').focus()
+            } else {
+                window.location.assign("https://es.wikipedia.org/wiki/" + val)
+            }
+        }
+        return false
+    }
+    // youtube
+    else if (i.startsWith('y=')) {
+        if (ComplexCar(o)) {
+            let val = o.substr(2, Infinity)
+            if (nw == true) {
+                window.open("https://www.youtube.com/results?search_query=" + val, '_blank').focus()
+            } else {
+                window.location.assign("https://www.youtube.com/results?search_query=" + val)
             }
         }
         return false
