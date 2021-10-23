@@ -22,7 +22,7 @@ function SpecialFinds(o, nw) {
     // translator
     if (i.startsWith('t=')) {
         if (ComplexCar(o)) {
-            let val = o.substr(2, Infinity)
+            let val = o.slice(2, Infinity)
             if (nw == true) {
                 window.open("https://translate.google.cl/?hl=es&sl=auto&tl=es&text=" + val, '_blank').focus()
             } else {
@@ -34,7 +34,7 @@ function SpecialFinds(o, nw) {
     // wikipedia
     else if (i.startsWith('w=')) {
         if (ComplexCar(o)) {
-            let val = o.substr(2, Infinity)
+            let val = o.slice(2, Infinity)
             if (nw == true) {
                 window.open("https://es.wikipedia.org/wiki/" + val, '_blank').focus()
             } else {
@@ -46,7 +46,7 @@ function SpecialFinds(o, nw) {
     // youtube
     else if (i.startsWith('y=')) {
         if (ComplexCar(o)) {
-            let val = o.substr(2, Infinity)
+            let val = o.slice(2, Infinity)
             if (nw == true) {
                 window.open("https://www.youtube.com/results?search_query=" + val, '_blank').focus()
             } else {
@@ -56,7 +56,7 @@ function SpecialFinds(o, nw) {
         return false
     } else if (i.startsWith('s=')) {
         if (ComplexCar(o)) {
-            let val = o.substr(2, Infinity)
+            let val = o.slice(2, Infinity)
             if (nw == true) {
                 window.open("https://open.spotify.com/search/" + val, '_blank').focus()
             } else {
