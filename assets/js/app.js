@@ -11,7 +11,7 @@ if (/MSIE 10/i.test(navigator.userAgent)) {
     // This is internet Explorer 9 or 11
     window.location.assign('error-browser.html')
 } else if (navigator.userAgent.indexOf("Starton") > -1) {
-    console.log("gracias por usar starton")
+    console.log("Gracias por usar starton")
 } else {
     let st = '<img src="assets/img/download_27px.png" alt="Download" class="dwst"' +
         'title="Descarga Starton" id="dwn-starton">'
@@ -41,8 +41,8 @@ function randomWll(c) {
 }
 
 function blankWall() {
-    var node = document.getElementById("wll-go")
-    node.parentNode.removeChild(node)
+    document.getElementById("wll-go").parentNode.removeChild(document.getElementById("wll-go"))
+    document.getElementById("change-wallpaper-btn").parentNode.removeChild(document.getElementById("change-wallpaper-btn"))
 
     const sl = document.createElement('style')
     sl.innerHTML = ".wp {background-color: #2E2E2E;" +
@@ -53,22 +53,22 @@ function blankWall() {
 /*---------------------*/
 
 function startTime() {
-    var t = new Date()
-    var hr = t.getHours()
-    var min = t.getMinutes()
-    var sec = t.getSeconds()
+    let t = new Date()
+    let hr = t.getHours()
+    let min = t.getMinutes()
+    let sec = t.getSeconds()
     min = checkTime(min)
     sec = checkTime(sec)
     document.getElementById("time-txt").innerHTML = hr + " : " + min + " : " + sec
     // -------
-    var sh = new String()
+    let sh = new String()
     if (t.getHours() > "12") {
         sh = "Buenas tardes"
     } else {
         sh = "Buenos días"
     }
     document.getElementById('gt-txt').innerHTML = sh
-    var time = setTimeout(function () {
+    let time = setTimeout(function () {
         startTime()
     }, 500)
 }

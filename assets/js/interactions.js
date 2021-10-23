@@ -24,8 +24,7 @@ $("#dwn-starton").click(function () {
 })
 
 /******************************************/
-var secure = new Boolean()
-secure = true
+var secure = true
 window.addEventListener("keydown", shortcuts)
 
 function shortcuts(e) {
@@ -43,9 +42,9 @@ function shortcuts(e) {
     }
 }
 
-function dsc(){
+function dsc() {
     let vl = document.getElementById("search-input").value.toLowerCase()
-    if (vl.startsWith('t=') || vl.startsWith('w=') || vl.startsWith('y=')) {
+    if (vl.startsWith('t=') || vl.startsWith('w=') || vl.startsWith('y=') || vl.startsWith('s=')) {
         document.getElementById('search-input').style = 'border-color: #D100FF;'
     } else {
         document.getElementById('search-input').style = 'border-color: gray;'

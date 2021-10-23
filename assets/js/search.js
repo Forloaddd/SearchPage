@@ -54,6 +54,16 @@ function SpecialFinds(o, nw) {
             }
         }
         return false
+    } else if (i.startsWith('s=')) {
+        if (ComplexCar(o)) {
+            let val = o.substr(2, Infinity)
+            if (nw == true) {
+                window.open("https://open.spotify.com/search/" + val, '_blank').focus()
+            } else {
+                window.location.assign("https://open.spotify.com/search/" + val)
+            }
+        }
+        return false
     } else {
         return true
     }
@@ -77,7 +87,7 @@ function search() {
         } else if (invalue.endsWith(".org")) {
             window.location.assign("http://www." + invalue)
         } else if (invalue == "") {} else {
-            var search = new String(SearchEngine + invalue)
+            let search = new String(SearchEngine + invalue)
             window.location.assign(search)
         }
 
