@@ -20,7 +20,7 @@ function ComplexCar(a) {
 function SpecialFinds(o, nw) {
     let i = o.toLowerCase()
     // translator
-    if (i.startsWith('t=')) {
+    if (i.startsWith('t ')) {
         if (ComplexCar(o)) {
             let val = o.slice(2, Infinity)
             if (nw == true) {
@@ -32,7 +32,7 @@ function SpecialFinds(o, nw) {
         return false
     }
     // wikipedia
-    else if (i.startsWith('w=')) {
+    else if (i.startsWith('w ')) {
         if (ComplexCar(o)) {
             let val = o.slice(2, Infinity)
             if (nw == true) {
@@ -44,7 +44,7 @@ function SpecialFinds(o, nw) {
         return false
     }
     // youtube
-    else if (i.startsWith('y=')) {
+    else if (i.startsWith('y ')) {
         if (ComplexCar(o)) {
             let val = o.slice(2, Infinity)
             if (nw == true) {
@@ -54,7 +54,9 @@ function SpecialFinds(o, nw) {
             }
         }
         return false
-    } else if (i.startsWith('s=')) {
+    }
+    // spotify
+    else if (i.startsWith('s ')) {
         if (ComplexCar(o)) {
             let val = o.slice(2, Infinity)
             if (nw == true) {
