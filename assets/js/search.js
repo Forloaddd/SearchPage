@@ -18,7 +18,7 @@ function ComplexCar(a) {
 
 // special finds
 function SpecialFinds(o, nw) {
-    let i = o.toLowerCase()
+    let i = o // toLowerCase()
     // translator
     if (i.startsWith('t ')) {
         if (ComplexCar(o)) {

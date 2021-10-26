@@ -43,7 +43,7 @@ function shortcuts(e) {
 }
 
 function dsc() {
-    let vl = document.getElementById("search-input").value.toLowerCase()
+    let vl = document.getElementById("search-input").value // .toLowerCase()
     if (vl.startsWith('t ') || vl.startsWith('w ') || vl.startsWith('y ') || vl.startsWith('s ')) {
         document.getElementById('search-input').style = 'border-color: #D100FF;'
     } else {
