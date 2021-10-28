@@ -23,6 +23,18 @@ $("#dwn-starton").click(function () {
     // window.open("browser/starton/starton.html", '_blank').focus()
 })
 
+var shw = false
+// web preview
+$("#prev-w").click(function () {
+    if (shw) {
+        $("#content-preview").hide()
+        shw = false
+    } else {
+        $("#content-preview").show()
+        shw = true
+    }
+})
+
 /******************************************/
 var secure = true
 window.addEventListener("keydown", shortcuts)
@@ -36,6 +48,14 @@ function shortcuts(e) {
                 secure = true
             }, 1000)
         }
+    } else if (e.keyCode == 113) {
+        if (shw) {
+            $("#content-preview").hide()
+            shw = false
+        } else {
+            $("#content-preview").show()
+            shw = true
+        }
     } else {
         dsc()
         FocusIn()
@@ -44,6 +64,8 @@ function shortcuts(e) {
 
 function dsc() {
     let vl = document.getElementById("search-input").value // .toLowerCase()
+    document.getElementById('view-i').setAttribute('src', 'http://' + vl)
+
     if (vl.startsWith('t ') || vl.startsWith('w ') || vl.startsWith('y ') || vl.startsWith('s ')) {
         document.getElementById('search-input').style = 'border-color: #D100FF;'
     } else {
