@@ -99,3 +99,17 @@
   opacity: .40;
   z-index: -9;
 }
+
+/* web preview */
+
+#view-i{
+  height: 50%;
+  width: 100%;
+  bottom: 50px;
+  position: absolute;
+  border-right: transparent;
+  border-left: transparent;
+  border-bottom: transparent;
+  border-color: gray;
+  z-index: 9;
+}
