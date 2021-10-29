@@ -114,12 +114,11 @@
 /* web preview */
 
 #view-i {
-  color: var(--fonts-color-white);
+  height: 300px;
   background-color: black;
-  height: 50%;
+  margin-top: 20px;
+  border-radius: 5px;
   width: 100%;
-  bottom: 50px;
-  position: absolute;
   border: transparent;
   z-index: 9;
 }
