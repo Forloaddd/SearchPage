@@ -35,6 +35,11 @@
   right: 100px;
 }
 
+#prev-w:active {
+  animation: pulse;
+  animation-duration: 1s;
+}
+
 #prev-w:hover {
   background-color: var(--hover-transp);
   border-radius: 5px;
@@ -43,6 +48,11 @@
 .menuPi:hover {
   background-color: var(--hover-transp);
   border-radius: 5px;
+}
+
+.menuSQ:active {
+  animation: pulse;
+  animation-duration: 1s;
 }
 
 #gt-txt {
@@ -90,6 +100,11 @@
   right: 140px;
 }
 
+.dwst:active {
+  animation: pulse;
+  animation-duration: 1s;
+}
+
 .dwst:hover{
   background-color: var(--hover-transp);
   border-radius: 5px;
@@ -98,6 +113,11 @@
 #settingsPc:hover {
   background-color: var(--hover-transp);
   border-radius: 5px;
+}
+
+#settingsPc:active {
+  animation: pulse;
+  animation-duration: 1s;
 }
 
 .background-overlay {
@@ -114,10 +134,13 @@
 /* web preview */
 
 #view-i {
+  animation: backInLeft; 
+  animation-duration: 1s; 
   height: 300px;
   background-color: black;
   margin-top: 20px;
-  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   width: 100%;
   border: transparent;
   z-index: 9;
