@@ -11,7 +11,7 @@ if (/MSIE 10/i.test(navigator.userAgent)) {
     // This is internet Explorer 9 or 11
     window.location.assign('error-browser.html')
 } else if (navigator.userAgent.indexOf("Starton") > -1) {
-    console.log("Gracias por usar starton")
+    console.log(ThanksConsole)
 } else {
     let st = '<img src="assets/img/download_27px.png" alt="Download" class="dwst"' +
         'title="Descarga Starton" id="dwn-starton">'
@@ -63,9 +63,9 @@ function startTime() {
     // -------
     let sh = new String()
     if (t.getHours() > "12") {
-        sh = "Buenas tardes"
+        sh = greetingTimeTar
     } else {
-        sh = "Buenos días"
+        sh = greetingTimeMan
     }
     document.getElementById('gt-txt').innerHTML = sh
     let time = setTimeout(function () {

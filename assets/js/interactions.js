@@ -26,13 +26,7 @@ $("#dwn-starton").click(function () {
 var shw = false
 // web preview
 $("#prev-w").click(function () {
-    if (shw) {
-        $("#content-preview").hide()
-        shw = false
-    } else {
-        $("#content-preview").show()
-        shw = true
-    }
+    shwPrev()
 })
 
 /******************************************/
@@ -49,13 +43,7 @@ function shortcuts(e) {
             }, 1000)
         }
     } else if (e.keyCode == 113) {
-        if (shw) {
-            $("#content-preview").hide()
-            shw = false
-        } else {
-            $("#content-preview").show()
-            shw = true
-        }
+        shwPrev()
     } else {
         dsc()
         FocusIn()
@@ -64,11 +52,23 @@ function shortcuts(e) {
 
 function dsc() {
     let vl = document.getElementById("search-input").value // .toLowerCase()
-    document.getElementById('view-i').setAttribute('src', 'http://' + vl)
+    document.getElementById('view-i').setAttribute('src', 'https://' + vl)
 
     if (vl.startsWith('t ') || vl.startsWith('w ') || vl.startsWith('y ') || vl.startsWith('s ')) {
         document.getElementById('search-input').style = 'border-color: #D100FF;'
     } else {
         document.getElementById('search-input').style = 'border-color: gray;'
+    }
+}
+
+function shwPrev() {
+    if (shw) {
+        $("#content-preview").hide()
+        document.getElementById("view-i").Disabled = true
+        shw = false
+    } else {
+        $("#content-preview").show()
+        document.getElementById("view-i").Disabled = false
+        shw = true
     }
 }
