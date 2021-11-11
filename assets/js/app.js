@@ -5,13 +5,17 @@
 
 // browser check
 if (/MSIE 10/i.test(navigator.userAgent)) {
-    // This is internet Explorer 10
+
     window.location.assign('error-browser.html')
+
 } else if (/MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
-    // This is internet Explorer 9 or 11
+    
     window.location.assign('error-browser.html')
+
 } else if (navigator.userAgent.indexOf("Starton") > -1) {
+    
     console.log(ThanksConsole)
+
 } else {
     let st = '<img src="assets/img/download_27px.png" alt="Download" class="dwst"' +
         'title="Descarga Starton" id="dwn-starton">'
@@ -84,23 +88,27 @@ $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
 
+
 // Guardado
 
 // new tab?
 if (localStorage.getItem("openNW")) {
-    $('#openNWI').prop('checked', (localStorage.getItem("openNW") == "1" ? true :false))
+    $('#openNWI').prop('checked', (localStorage.getItem("openNW") == "1" ? true : false))
 } else {
     localStorage.setItem("openNW", "0")
 }
 
+
 $('#openNWI').change(function () {
-    localStorage.setItem('openNW', ($(this).is(':checked') ? "1" :"0"))
+    localStorage.setItem('openNW', ($(this).is(':checked') ? "1" : "0"))
 })
 
-// autocompletado
+
+// autocom
 if (localStorage.getItem("autoinp")) {} else {
     localStorage.setItem("autoinp", "1")
 }
+
 if (localStorage.getItem("autoinp") == "1") {
     $('#autocomplete-inp').prop('checked', true)
     document.getElementById('search-input').setAttribute("autocomplete", "on")
@@ -117,22 +125,14 @@ $('#autocomplete-inp').change(function () {
         document.getElementById('search-input').setAttribute("autocomplete", "off")
     }
 })
-if (localStorage.getItem("autoinp") == "1") {
-    $('autocomplete-inp').prop('checked', true)
-} else {
-    $('autocomplete-inp').prop('checked', false)
-}
+$('autocomplete-inp').prop('checked', (localStorage.getItem("autoinp") == "1") ? true : false)
 
 
-// fondo
+// wallpaper
 if (localStorage.getItem("wallpaper")) {} else {
     localStorage.setItem("wallpaper", "1")
 }
-if (localStorage.getItem("wallpaper") == "1") {
-    $('#show-wallpaper').prop('checked', true)
-} else {
-    $('show-wallpaper').prop('checked', false)
-}
+$('#show-wallpaper').prop('checked', (localStorage.getItem("wallpaper") == "1") ? true : false)
 $('#show-wallpaper').change(function () {
     if ($(this).is(':checked')) {
         localStorage.setItem("wallpaper", "1")
