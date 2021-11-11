@@ -87,20 +87,14 @@ $(document).ready(function () {
 // Guardado
 
 // new tab?
-if (localStorage.getItem("openNW")) {} else {
+if (localStorage.getItem("openNW")) {
+    $('#openNWI').prop('checked', (localStorage.getItem("openNW") == "1" ? true :false))
+} else {
     localStorage.setItem("openNW", "0")
-    if (localStorage.getItem("openNW") == "1") {
-        $('#openNWI').prop('checked', true)
-    } else {
-        $('#openNWI').prop('checked', false)
-    }
 }
+
 $('#openNWI').change(function () {
-    if ($(this).is(':checked')) {
-        localStorage.setItem("openNW", "1")
-    } else {
-        localStorage.setItem("openNW", "0")
-    }
+    localStorage.setItem('openNW', ($(this).is(':checked') ? "1" :"0"))
 })
 
 // autocompletado
