@@ -13,11 +13,10 @@
   <link rel="stylesheet" href="assets/css/animate.css">
   <noscript>
     <META HTTP-EQUIV="REFRESH" CONTENT="0;URL=error-js.html">
-  </noscript> 
+  </noscript>
 </head>
 
 <body>
-  <script src="assets/js/translation.js"></script>
   <div class="background-overlay"></div>
   <div class="wp"></div>
   <div id="engine-google"></div>
@@ -72,19 +71,24 @@
             <input id="openNWI" type="checkbox" name="checkbox" style="margin-right: 5px;"> Abrir búsquedas en nueva
             pestaña
           </div>
-          <input type="checkbox" name="autocomplete" id="autocomplete-inp" style="margin-right: 5px; margin-top: 10px;">
-          Autocompletar búsquedas <br>
-          <input type="checkbox" name="wallpaper-toogle" id="show-wallpaper"
-            style="margin-right: 5px; margin-top: 10px;" data-toggle="tooltip" data-placement="top"
-            title="Desactivar esto, puede ayudar a un menor uso de memoria ram y a tener un sitio mas rapido">
-          Mostrar fondo
+          <div class="autocomser">
+            <input type="checkbox" name="autocomplete" id="autocomplete-inp"
+              style="margin-right: 5px; margin-top: 10px;">
+            Autocompletar búsquedas <br>
+          </div>
+          <div class="showwallp">
+            <input type="checkbox" name="wallpaper-toogle" id="show-wallpaper"
+              style="margin-right: 5px; margin-top: 10px;" data-toggle="tooltip" data-placement="top"
+              title="Desactivar esto, puede ayudar a un menor uso de memoria ram y a tener un sitio mas rapido">
+            Mostrar fondo
+          </div>
           <div class="separator">
           </div>
           <input type="button" class="btn btn-primary" id="change-wallpaper-btn" value="Cambiar fondo"
             style="margin-top: 40px;">
         </div>
         <div class="modal-footer">
-          <a href="" id="clear-settings-btn" data-toggle="tooltip" data-placement="top"
+          <a href="" id="clear-settings-btn" class="resetset" data-toggle="tooltip" data-placement="top"
             title="Reiniciar todos los ajustes a los valores predeterminados">Reiniciar</a>
           <button type="button" class="btn btn-primary" data-dismiss="modal" id="close-modal1">Cerrar</button>
         </div>
@@ -117,6 +121,7 @@
       </div>
     </div>
     <script src="assets/js/search.js"></script>
+    <script src="assets/js/translation.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/interactions.js"></script>
 </body>

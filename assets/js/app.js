@@ -18,7 +18,7 @@ if (/MSIE 10/i.test(navigator.userAgent)) {
 
 } else {
     let st = '<img src="assets/img/download_27px.png" alt="Download" class="dwst"' +
-        'title="Descarga Starton" id="dwn-starton">'
+        'title="' + Startondownloadtitle + '" id="dwn-starton">'
     document.getElementById("dowst").innerHTML = st
 }
 
