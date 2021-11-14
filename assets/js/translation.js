@@ -40,5 +40,5 @@ else {
     $('#prev-w').prop('title', 'Web preview (F2)')
     $('#apps-menu').prop('title', 'Applications')
     $('#settingsPc').prop('title', 'Settings (Esc)')
-    $('#change-wallpaper-btn').prop('value', 'Change Wallpaper')
+    $('#change-wallpaper-btn').prop('value', 'Change wallpaper')
 }
