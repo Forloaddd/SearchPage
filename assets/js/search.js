@@ -8,7 +8,7 @@ function FocusIn() {
 // find if not got admited characters
 function ComplexCar(a) {
     if (a.indexOf("#") > -1 || a.indexOf("&") > -1) {
-        document.getElementById('alert-code').innerHTML = 'No use caracteres especiales como "#" o "&".'
+        document.getElementById('alert-code').innerHTML = error1characters
         document.getElementById('show-alert').click()
         return false
     } else {
@@ -107,17 +107,17 @@ function searchNW() {
         if (document.getElementById("engine-qwant")) {
             SearchEngine = "https://www.qwant.com/?q=";
         } else if (document.getElementById("engine-google")) {
-            SearchEngine = "https://www.google.com/search?q=";
+            SearchEngine = "https://www.google.com/search?q="
         }
 
         if (invalue.endsWith(".com")) {
 
-            window.open("http://www." + invalue, '_blank').focus();
+            window.open("http://www." + invalue, '_blank').focus()
         } else if (invalue.endsWith(".org")) {
-            window.open("http://www." + invalue, '_blank').focus();
+            window.open("http://www." + invalue, '_blank').focus()
         } else if (invalue == "") {} else {
 
-            window.open(SearchEngine + invalue, '_blank').focus();
+            window.open(SearchEngine + invalue, '_blank').focus()
         }
 
     }
