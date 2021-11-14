@@ -21,7 +21,7 @@ else {
     Startondownloadtitle = 'Download the Starton Browser'
     error1characters = 'Do not use special characters such as "#" or "&".'
     //
-    $('.lw-link-draw').html('like this wallpaper?')
+    $('.lw-link-draw').html('Do you like this wallpaper?')
     $('.lbl-cor').html('By <a href="https://github.com/Forloaddd/" class="link-cor" translate="no">Starton') 
     $('.modal-title').html('Settings') 
     $('#openNWI').html('Open in new browser tab')
@@ -40,4 +40,5 @@ else {
     $('#prev-w').prop('title', 'Web preview (F2)')
     $('#apps-menu').prop('title', 'Applications')
     $('#settingsPc').prop('title', 'Settings (Esc)')
+    $('#change-wallpaper-btn').prop('value', 'Change Wallpaper')
 }
